@@ -13,6 +13,7 @@ Current design intent:
 - `starbug-tests/` - C kernel tests (`dot_product`, `fir_filter`, `matmul`) and compile script.
 - `toolchain/` - Makefile include for switching VLIW builds from GCC to clang.
 - `docs/` - backend plan and ILP strategy notes.
+  - includes `docs/COMPILER_ADDITIONS_DIAGRAM.md` for architecture flow.
 - `llvm-overlay/` - overlay/snippets and patch map for replaying Starbug changes.
 
 ## Quick Start
