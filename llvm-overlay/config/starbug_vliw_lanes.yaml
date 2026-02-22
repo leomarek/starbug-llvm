@@ -1,0 +1,46 @@
+# Starbug VLIW lane and policy configuration.
+# This file is intended to be translated into backend defaults (TableGen/C++).
+# Runtime CLI overrides can replace selected fields for experimentation.
+
+version: 1
+name: starbug-vliw
+num_lanes: 4
+
+# Op classes are backend-internal categories produced by opcode-class mapping.
+op_classes:
+  - any
+  - alu_addsub
+  - alu_muldiv
+  - alu_shift
+  - load
+  - store
+  - branch
+  - compare
+  - move
+  - csr
+
+lanes:
+  - lane: 0
+    allows: [any]
+  - lane: 1
+    allows: [alu_addsub, alu_muldiv, alu_shift]
+  - lane: 2
+    allows: [alu_addsub, alu_muldiv, alu_shift]
+  - lane: 3
+    allows: [alu_addsub, alu_muldiv, alu_shift]
+
+unroll_policy:
+  force_unroll: true
+  default_unroll_factor: 32
+  max_unroll_factor: 128
+  prefer_unroll_and_jam: true
+  spill_pressure_guard: true
+
+scheduler_policy:
+  prioritize_pointer_bumps: true
+  prioritize_ready_loads: true
+  latency_weight_load: 3
+  latency_weight_muldiv: 2
+  latency_weight_store: 1
+  allow_short_packets: true
+  emit_single_instruction_hints: false
