@@ -1,4 +1,4 @@
 [submodule "llvm-project"]
 	path = llvm-project
-	url = git@github.com:leomarek/llvm-project.git
+	url = https://github.com/leomarek/llvm-project.git
 	branch = codex/starbug-vliw
