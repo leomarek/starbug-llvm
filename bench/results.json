@@ -1,0 +1,644 @@
+{
+  "aes_sbox": {
+    "kernel": "aes_sbox",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/aes_sbox.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/aes_sbox.elf",
+      "bundles": {
+        "total_instructions": 2237,
+        "hint_instructions": 210,
+        "payload_instructions": 2027,
+        "bundled_instructions": 497,
+        "scalar_instructions": 1530,
+        "bundle_size_histogram": {
+          "2": 158,
+          "3": 27,
+          "4": 25
+        },
+        "lane_utilisation": {
+          "lane0": 210,
+          "lane1": 210,
+          "lane2": 52,
+          "lane3": 25
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "load": 68,
+            "mul": 1,
+            "alu": 18,
+            "store": 123
+          },
+          "lane1": {
+            "alu": 210
+          },
+          "lane2": {
+            "alu": 52
+          },
+          "lane3": {
+            "alu": 25
+          }
+        },
+        "bundle_coverage_pct": 24.518993586581153,
+        "static_ilp": 1.164942528735632,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 61
+      },
+      "unsafe": []
+    }
+  },
+  "binsearch": {
+    "kernel": "binsearch",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/binsearch.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/binsearch.elf",
+      "bundles": {
+        "total_instructions": 1710,
+        "hint_instructions": 47,
+        "payload_instructions": 1663,
+        "bundled_instructions": 132,
+        "scalar_instructions": 1531,
+        "bundle_size_histogram": {
+          "2": 24,
+          "3": 8,
+          "4": 15
+        },
+        "lane_utilisation": {
+          "lane0": 47,
+          "lane1": 47,
+          "lane2": 23,
+          "lane3": 15
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "alu": 12,
+            "store": 34,
+            "load": 1
+          },
+          "lane1": {
+            "alu": 47
+          },
+          "lane2": {
+            "alu": 23
+          },
+          "lane3": {
+            "alu": 15
+          }
+        },
+        "bundle_coverage_pct": 7.9374624173181,
+        "static_ilp": 1.0538656527249683,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 19
+      },
+      "unsafe": []
+    }
+  },
+  "bitops": {
+    "kernel": "bitops",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/bitops.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/bitops.elf",
+      "bundles": {
+        "total_instructions": 1673,
+        "hint_instructions": 67,
+        "payload_instructions": 1606,
+        "bundled_instructions": 206,
+        "scalar_instructions": 1400,
+        "bundle_size_histogram": {
+          "2": 22,
+          "3": 18,
+          "4": 27
+        },
+        "lane_utilisation": {
+          "lane0": 67,
+          "lane1": 67,
+          "lane2": 45,
+          "lane3": 27
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "alu": 66,
+            "load": 1
+          },
+          "lane1": {
+            "alu": 67
+          },
+          "lane2": {
+            "alu": 45
+          },
+          "lane3": {
+            "alu": 27
+          }
+        },
+        "bundle_coverage_pct": 12.826899128268991,
+        "static_ilp": 1.094751192910702,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 62
+      },
+      "unsafe": []
+    }
+  },
+  "conv2d": {
+    "kernel": "conv2d",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/conv2d.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/conv2d.elf",
+      "bundles": {
+        "total_instructions": 2662,
+        "hint_instructions": 272,
+        "payload_instructions": 2390,
+        "bundled_instructions": 637,
+        "scalar_instructions": 1753,
+        "bundle_size_histogram": {
+          "2": 193,
+          "3": 65,
+          "4": 14
+        },
+        "lane_utilisation": {
+          "lane0": 272,
+          "lane1": 272,
+          "lane2": 79,
+          "lane3": 14
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "alu": 14,
+            "store": 132,
+            "load": 125,
+            "mul": 1
+          },
+          "lane1": {
+            "alu": 233,
+            "mul": 39
+          },
+          "lane2": {
+            "alu": 65,
+            "mul": 14
+          },
+          "lane3": {
+            "alu": 12,
+            "mul": 2
+          }
+        },
+        "bundle_coverage_pct": 26.652719665271967,
+        "static_ilp": 1.180246913580247,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 110
+      },
+      "unsafe": []
+    }
+  },
+  "crc32": {
+    "kernel": "crc32",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/crc32.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/crc32.elf",
+      "bundles": {
+        "total_instructions": 2125,
+        "hint_instructions": 128,
+        "payload_instructions": 1997,
+        "bundled_instructions": 321,
+        "scalar_instructions": 1676,
+        "bundle_size_histogram": {
+          "2": 84,
+          "3": 23,
+          "4": 21
+        },
+        "lane_utilisation": {
+          "lane0": 128,
+          "lane1": 128,
+          "lane2": 44,
+          "lane3": 21
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "store": 26,
+            "alu": 54,
+            "load": 48
+          },
+          "lane1": {
+            "alu": 128
+          },
+          "lane2": {
+            "alu": 44
+          },
+          "lane3": {
+            "alu": 21
+          }
+        },
+        "bundle_coverage_pct": 16.074111166750125,
+        "static_ilp": 1.1069844789356984,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 35
+      },
+      "unsafe": []
+    }
+  },
+  "dot_product": {
+    "kernel": "dot_product",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/dot_product.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/dot_product.elf",
+      "bundles": {
+        "total_instructions": 1852,
+        "hint_instructions": 88,
+        "payload_instructions": 1764,
+        "bundled_instructions": 221,
+        "scalar_instructions": 1543,
+        "bundle_size_histogram": {
+          "2": 57,
+          "3": 17,
+          "4": 14
+        },
+        "lane_utilisation": {
+          "lane0": 88,
+          "lane1": 88,
+          "lane2": 31,
+          "lane3": 14
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "alu": 4,
+            "store": 45,
+            "load": 39
+          },
+          "lane1": {
+            "alu": 57,
+            "mul": 31
+          },
+          "lane2": {
+            "alu": 30,
+            "mul": 1
+          },
+          "lane3": {
+            "alu": 14
+          }
+        },
+        "bundle_coverage_pct": 12.528344671201815,
+        "static_ilp": 1.0815450643776825,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 22
+      },
+      "unsafe": []
+    }
+  },
+  "fir": {
+    "kernel": "fir",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/fir.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/fir.elf",
+      "bundles": {
+        "total_instructions": 2269,
+        "hint_instructions": 170,
+        "payload_instructions": 2099,
+        "bundled_instructions": 435,
+        "scalar_instructions": 1664,
+        "bundle_size_histogram": {
+          "2": 102,
+          "3": 41,
+          "4": 27
+        },
+        "lane_utilisation": {
+          "lane0": 170,
+          "lane1": 170,
+          "lane2": 68,
+          "lane3": 27
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "alu": 15,
+            "store": 49,
+            "load": 102,
+            "mul": 4
+          },
+          "lane1": {
+            "alu": 127,
+            "mul": 43
+          },
+          "lane2": {
+            "alu": 58,
+            "mul": 10
+          },
+          "lane3": {
+            "alu": 26,
+            "mul": 1
+          }
+        },
+        "bundle_coverage_pct": 20.724154359218677,
+        "static_ilp": 1.144492911668484,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 40
+      },
+      "unsafe": []
+    }
+  },
+  "iir": {
+    "kernel": "iir",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/iir.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/iir.elf",
+      "bundles": {
+        "total_instructions": 2066,
+        "hint_instructions": 135,
+        "payload_instructions": 1931,
+        "bundled_instructions": 373,
+        "scalar_instructions": 1558,
+        "bundle_size_histogram": {
+          "2": 71,
+          "3": 25,
+          "4": 39
+        },
+        "lane_utilisation": {
+          "lane0": 135,
+          "lane1": 135,
+          "lane2": 64,
+          "lane3": 39
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "alu": 15,
+            "store": 52,
+            "load": 68
+          },
+          "lane1": {
+            "alu": 135
+          },
+          "lane2": {
+            "alu": 64
+          },
+          "lane3": {
+            "alu": 39
+          }
+        },
+        "bundle_coverage_pct": 19.31641636457794,
+        "static_ilp": 1.1405788541051387,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 29
+      },
+      "unsafe": []
+    }
+  },
+  "matmul": {
+    "kernel": "matmul",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/matmul.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/matmul.elf",
+      "bundles": {
+        "total_instructions": 2578,
+        "hint_instructions": 242,
+        "payload_instructions": 2336,
+        "bundled_instructions": 569,
+        "scalar_instructions": 1767,
+        "bundle_size_histogram": {
+          "2": 177,
+          "3": 45,
+          "4": 20
+        },
+        "lane_utilisation": {
+          "lane0": 242,
+          "lane1": 242,
+          "lane2": 65,
+          "lane3": 20
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "alu": 22,
+            "store": 88,
+            "load": 131,
+            "mul": 1
+          },
+          "lane1": {
+            "alu": 191,
+            "mul": 51
+          },
+          "lane2": {
+            "alu": 56,
+            "mul": 9
+          },
+          "lane3": {
+            "alu": 16,
+            "mul": 4
+          }
+        },
+        "bundle_coverage_pct": 24.357876712328768,
+        "static_ilp": 1.1627675460428073,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 71
+      },
+      "unsafe": []
+    }
+  },
+  "sad": {
+    "kernel": "sad",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/sad.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/sad.elf",
+      "bundles": {
+        "total_instructions": 2362,
+        "hint_instructions": 201,
+        "payload_instructions": 2161,
+        "bundled_instructions": 488,
+        "scalar_instructions": 1673,
+        "bundle_size_histogram": {
+          "2": 142,
+          "3": 32,
+          "4": 27
+        },
+        "lane_utilisation": {
+          "lane0": 201,
+          "lane1": 201,
+          "lane2": 59,
+          "lane3": 27
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "alu": 109,
+            "store": 73,
+            "load": 19
+          },
+          "lane1": {
+            "alu": 201
+          },
+          "lane2": {
+            "alu": 59
+          },
+          "lane3": {
+            "alu": 27
+          }
+        },
+        "bundle_coverage_pct": 22.582137899120777,
+        "static_ilp": 1.1531483457844183,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 133
+      },
+      "unsafe": []
+    }
+  },
+  "saxpy": {
+    "kernel": "saxpy",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/saxpy.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/saxpy.elf",
+      "bundles": {
+        "total_instructions": 2081,
+        "hint_instructions": 138,
+        "payload_instructions": 1943,
+        "bundled_instructions": 367,
+        "scalar_instructions": 1576,
+        "bundle_size_histogram": {
+          "2": 77,
+          "3": 31,
+          "4": 30
+        },
+        "lane_utilisation": {
+          "lane0": 138,
+          "lane1": 138,
+          "lane2": 61,
+          "lane3": 30
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "store": 41,
+            "alu": 9,
+            "load": 88
+          },
+          "lane1": {
+            "alu": 138
+          },
+          "lane2": {
+            "alu": 61
+          },
+          "lane3": {
+            "alu": 30
+          }
+        },
+        "bundle_coverage_pct": 18.888317035512095,
+        "static_ilp": 1.133605600933489,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 26
+      },
+      "unsafe": []
+    }
+  },
+  "sort": {
+    "kernel": "sort",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/sort.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/sort.elf",
+      "bundles": {
+        "total_instructions": 2195,
+        "hint_instructions": 187,
+        "payload_instructions": 2008,
+        "bundled_instructions": 426,
+        "scalar_instructions": 1582,
+        "bundle_size_histogram": {
+          "2": 147,
+          "3": 28,
+          "4": 12
+        },
+        "lane_utilisation": {
+          "lane0": 187,
+          "lane1": 187,
+          "lane2": 40,
+          "lane3": 12
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "alu": 46,
+            "store": 65,
+            "mul": 17,
+            "load": 59
+          },
+          "lane1": {
+            "alu": 128,
+            "mul": 59
+          },
+          "lane2": {
+            "alu": 38,
+            "mul": 2
+          },
+          "lane3": {
+            "alu": 12
+          }
+        },
+        "bundle_coverage_pct": 21.215139442231077,
+        "static_ilp": 1.135104578858112,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 51
+      },
+      "unsafe": []
+    }
+  },
+  "strops": {
+    "kernel": "strops",
+    "baseline": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/baseline/strops.elf"
+    },
+    "starbug": {
+      "elf": "/rs23/lnm7/open_hw/starbug-llvm/bench/build/starbug/strops.elf",
+      "bundles": {
+        "total_instructions": 1947,
+        "hint_instructions": 105,
+        "payload_instructions": 1842,
+        "bundled_instructions": 248,
+        "scalar_instructions": 1594,
+        "bundle_size_histogram": {
+          "2": 79,
+          "3": 14,
+          "4": 12
+        },
+        "lane_utilisation": {
+          "lane0": 105,
+          "lane1": 105,
+          "lane2": 26,
+          "lane3": 12
+        },
+        "lane_class_mix": {
+          "lane0": {
+            "alu": 48,
+            "store": 44,
+            "load": 13
+          },
+          "lane1": {
+            "alu": 99,
+            "mul": 6
+          },
+          "lane2": {
+            "alu": 26
+          },
+          "lane3": {
+            "alu": 12
+          }
+        },
+        "bundle_coverage_pct": 13.463626492942455,
+        "static_ilp": 1.0841671571512654,
+        "unsafe_bundles": 0,
+        "bundles_with_warnings": 70
+      },
+      "unsafe": []
+    }
+  }
+}
