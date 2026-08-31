@@ -511,6 +511,6 @@ dot_product_i32:                        # @dot_product_i32
 .Lfunc_end0:
 	.size	dot_product_i32, .Lfunc_end0-dot_product_i32
                                         # -- End function
-	.ident	"clang version 23.0.0git (ssh://git@github.com/llvm/llvm-project.git d3081aafc47eccba242ffc3cc43ecfcb545a51bb)"
+	.ident	"clang version 23.0.0git (https://github.com/leomarek/llvm-project.git e1ee762cc35a72c881b0c0aa6fa5371d1d8a8f90)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig

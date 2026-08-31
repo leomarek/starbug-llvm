@@ -583,7 +583,7 @@ fir_filter_i32:                         # @fir_filter_i32
 	add	a3, a3, a1
 	lw	a5, 0(a5)
 	lw	a3, 0(a3)
-	mul	a3, a3, a5 
+	mul	a3, a3, a5
 	add	s5, s5, a3
 .LBB0_92:                               #   in Loop: Header=BB0_5 Depth=1
 	li	a3, 29
@@ -2791,6 +2791,6 @@ fir_filter_i32:                         # @fir_filter_i32
 .Lfunc_end0:
 	.size	fir_filter_i32, .Lfunc_end0-fir_filter_i32
                                         # -- End function
-	.ident	"clang version 23.0.0git (ssh://git@github.com/llvm/llvm-project.git d3081aafc47eccba242ffc3cc43ecfcb545a51bb)"
+	.ident	"clang version 23.0.0git (https://github.com/leomarek/llvm-project.git e1ee762cc35a72c881b0c0aa6fa5371d1d8a8f90)"
 	.section	".note.GNU-stack","",@progbits
 	.addrsig
